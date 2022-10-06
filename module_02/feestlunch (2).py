@@ -5,6 +5,6 @@ prijsproduct1 = int(input("vul hier de prijs van het product in centen:"))
 kortingsbonnen = int(input("vul hier de aantal kortingsbonnen:"))
 kortingsprijs = int(input("vul hier de prijs van de kortingsbonnen in centen:"))
 
-prijs = crossantjes * prijsproduct + stokbroden * prijsproduct1 - kortingsbonnen * kortingsprijs
+prijs = (crossantjes * prijsproduct + stokbroden * prijsproduct1 - kortingsbonnen * kortingsprijs)/100
 
 print(f"De feestlunch kost je bij de bakker {prijs} euro voor de {crossantjes} crossantjes en de {stokbroden} stokbroden als de {kortingsbonnen} kortingbonnen nog geldig zijn!")
