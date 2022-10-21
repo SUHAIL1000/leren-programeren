@@ -23,19 +23,19 @@ if manVrouw == "vrouw":
         krullenlengte = int(input("hoe lang zijn uw krullen"))
 
 naam = input("wat is uw naam? ")
-if naam == "nadhir":
-        raise NameError("nadhir opdonderen")
+if naam == "r":
+        raise NameError("r opdonderen")
 lengte = int(input("hoe lang bent uw? "))
-gewicht =  input("hoeveel weegt uw? ")
+gewicht =  int(input("hoeveel weegt uw? "))
 certificaat = input("Heeft Certificaat “Overleven met gevaarlijk personeel? ")
-praktijk =  input("Meer dan 4 jaar praktijkervaring met dieren-dressuur? ")
-jongleren = input("meer dan 5 jaar ervaring met jongleren")
-acrobatiek = input("meer dan 3 jaar praktijkervaring met acrobatiek")
+praktijk =  int(input("Meer dan 4 jaar praktijkervaring met dieren-dressuur? "))
+jongleren = int(input("meer dan 5 jaar ervaring met jongleren"))
+acrobatiek = int(input("meer dan 3 jaar praktijkervaring met acrobatiek"))
 leeftijd = int(input("hoe oud bent uw? "))
 ps4 = ("heeft uw ps4")
 kleren = ("heeft uw kleren")
 
-if diploma == "ja" and rijbewijs == "ja" and hoed == "ja" or hoed == "nee" and manVrouw == "vrouw" and krullen == "ja" and krullenlengte > 20 or manVrouw == "man" and snor == "ja" and snorlengte > 10 and lengte > 1.50 and gewicht > 10 and certificaat == "ja" and (praktijk == "ja" or jongleren == "ja" or acrobatiek == "ja"):
+if diploma == "ja" and rijbewijs == "ja" and hoed == "ja" or hoed == "nee" and (manVrouw == "vrouw" and krullen == "ja" and krullenlengte > 20 or manVrouw == "man" and snor == "ja" and snorlengte > 10 and lengte > 1.50 and gewicht > 10 ) and certificaat == "ja" and (praktijk > 4 or jongleren > 5 or acrobatiek > 5):
 
         print("gefeliciteerd uw bent geslaagd")
 
