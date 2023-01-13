@@ -17,7 +17,7 @@ while a < 1:
         a = 10
     except ValueError:
         print ("een nummer graag.")
-        a = 0
+        a = 0 
 
 
 smallprice = int(small * smallAmount)

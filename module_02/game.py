@@ -5,7 +5,7 @@ print(f"start game ")
 
 keuze = input("hallo welke richting wilt uw op voetbal or basketball ")
 if keuze == "voetbal":
-        voetbal == input("wie heeft de champions leuge gewonnen in 2016 ")
+        voetbal = input("wie heeft de champions leuge gewonnen in 2016 ")
         if voetbal == "real madrid":
                 correct += 1
                 print(f"je hebt {correct} punt(en)")
@@ -17,16 +17,16 @@ if keuze == "voetbal":
                 correct += 1 
                 print(f"je hebt {correct} punt(en)")
         else:
-                print(je ligt er uit om dat je deze vraag )
+                print("je ligt er uit om dat je deze vraag ")
                 exit()
                         
         wk = input("wat was de score van duitsland tegen brazilie in de wk 2014? ")
         if wk == "7-1": 
                 correct += 1
-                print(f"je hebt correct punt(en)") 
+                print(f"je hebt {correct} punt(en)") 
         else:
                 hint = input("je hebt hem fout wil je een hint voor je volgende vraag ja of nee ")
-                if hint = "ja":
+                if hint == "ja":
                         correct -=1 
                         print("je hint is 14-7")
                 
@@ -35,7 +35,7 @@ if keuze == "voetbal":
         if messi == "7":
                 correct += 1
                 print(f"je hebt {correct} punt(en)") 
-        else
+        else:
                 print("je hebt hem fout")
 
         print("gefiliceteerd uw heeft gewonnen ")               

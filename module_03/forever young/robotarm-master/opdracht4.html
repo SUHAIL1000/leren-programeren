@@ -9,37 +9,32 @@
             
             // Het level inladen
             robotArm.loadLevel("exercise 4");
-            for (let i = 0; i < 4; i++)
-        {
-            robotArm.grab()
-            robotArm.moveRight()
-            robotArm.moveRight()
-            robotArm.drop()
-            robotArm.moveLeft()
-            robotArm.moveLeft()
+            robotArm.speed = 150;
+            for (let i = 0; i < 3; i++){
+                robotArm.grab()
+                robotArm.moveRight()
+                robotArm.moveRight()
+                robotArm.drop()
+                robotArm.moveLeft()
+                robotArm.moveLeft()
+            }
 
-            robotArm.grab()
-            robotArm.moveRight()
-            robotArm.moveRight()
-            robotArm.drop()
+            for (let i = 0; i < 2; i++){
+                robotArm.moveRight()
+            }
+            for (let i = 0; i < 3; i++){
+                robotArm.grab()
+                robotArm.moveLeft()
+                robotArm.drop()
+                robotArm.moveRight()
+                
+            }
 
-            robotArm.moveLeft()
-            robotArm.moveLeft()
-            robotArm.grab()
-            robotArm.moveRight()
-            robotArm.drop()
 
-            robotArm.moveRight()
-            robotArm.grab()
-            robotArm.moveLeft()
-            robotArm.drop()
-
-            robotArm.moveRight()
-            robotArm.grab()
-            robotArm.moveLeft()
-            robotArm.drop()
-            break
-        }
+                
+            
+            
+        
             
 
         
