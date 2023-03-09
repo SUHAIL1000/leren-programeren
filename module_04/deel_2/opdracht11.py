@@ -22,9 +22,8 @@ while d == False:
                                           
                   elif rond_fruit == niet_rond_fruit:
                         print(f"Er zijn {rond_fruit} ronde vruchten en {niet_rond_fruit} niet ronde vruchten in de kleur {kleur}")
-                  exit() 
+                  
                         
       else:
             print(f"{kleur} zit er niet in")
     
-            
