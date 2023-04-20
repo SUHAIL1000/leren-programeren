@@ -1,54 +1,59 @@
-def addition (number1, number2):
+def addition(number1,number2):
     return number1 + number2
-def subtraction (number1, number2):
+def subtraction(number1,number2):
     return number1 - number2
-def multiplication (number1, number2):
+def multiplicaton(number1,number2):
     return number1 * number2
-def division (number1, number2):
+def division(number1,number2):
     return number1 / number2
 
-keuze = " "
-while not keuze in ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'):
-    keuze = input("Wat wilt u doen? A = getallen optellen, B = getallen aftrekken, C = getallen vermenigvuldigen, D = getallen delen, E = getal ophogen, F = getal verlagen, G = getal verdubbelen of H = getal halveren?, type 'niks' als je niks wilt doen: ").lower()
-    if keuze == "niks":
-        exit()
+keuze = (input("wat wilt u doen? A) getallen optellen, B) getallen aftrekken, C) getallen vermenigvuldigen, D) getallen delen, E) getal ophogen, F) getal verlagen, G) getal verdubbelen of H) getal halveren) i) ")).lower()
 
-aantal = -1
+n1 = int(input("geef getal op "))
+
 while True:
-    if aantal > -1 and keuze != 'i' and keuze in ('a', 'b', 'c', 'd'):
-        number1 = aantal
-        number2 = int(input("Geef de 2e getal op: "))
-
-
-
-    elif keuze in ('e', 'f', 'g', 'h'):
-        number1 = int(input("Geef een getal op: "))
-
-    else:
-        exit()
-
-    if keuze == "a":
-        aantal = addition(number1, number2)
-        print(aantal)
-    elif keuze == "b":
-        aantal = subtraction(number1, number2)
-        print(aantal)
-    elif keuze == "c":
-        aantal = multiplication(number1,number2)
-        print(aantal)
-    elif keuze == "d":
-        aantal = division(number1,number2)
-        print(aantal)
-    elif keuze == "e":
-        aantal = addition(number1,number2)
-        print(aantal)
-    elif keuze == "f":
-        aantal = subtraction(number1,number2)
-        print(aantal)
-    elif keuze == "g":
-        aantal = multiplication(number1,number2)
-        print(aantal)
-    elif keuze == "h":
-        aantal = division(number1,number2)
-        print(aantal)
     
+    
+    if keuze == "a":
+
+        n2 = int(input("geef getal 2e op "))
+        antwoord = addition(n1,n2)
+
+    elif keuze == "b":
+
+        n2 = int(input("geef getal 2e op "))
+        antwoord = subtraction(n1,n2)
+
+    elif keuze == "c":
+
+        n2 = int(input("geef getal 2e op "))
+        antwoord = multiplicaton(n1,n2)
+
+    elif keuze == "d":
+
+        n2 = int(input("geef getal 2e op "))
+        antwoord = division(n1,n2)
+
+    elif keuze == "e":
+        n2 = 1
+        antwoord = addition(n1,n2)
+
+    elif keuze == "f":
+        n2 = 1
+        antwoord = addition(n1,n2)
+
+    elif keuze == "g":
+        n2 = 2
+        antwoord = multiplicaton(n1,n2)
+    elif keuze == "h":
+            n2 = 2
+            antwoord = division(n1,n2)
+        
+    elif keuze == "i":
+        break
+    n1= antwoord
+    print(antwoord)
+    keuze = (input("wat wilt u doen met deze antwoord ? A) getallen optellen, B) getallen aftrekken, C) getallen vermenigvuldigen, D) getallen delen, E) getal ophogen, F) getal verlagen, G) getal verdubbelen of H) getal halveren? ")).lower()
+
+  
+#moet ook werke met floet 
