@@ -29,14 +29,15 @@ def getFileContentAsString(textFile: str) -> str:
     with open(textFile, 'r') as file:
         content = file.read()
     return content
- 
+
 # opdracht 1
 def getNumberOfCharacters(text: str) -> int:
     teller = 0
     for i in text:
+
         if i in ALLOWED_IN_WORD:
             teller +=1
-    
+
     return teller 
 
 # opdracht 2
@@ -45,21 +46,22 @@ def getNumberOfSentences(text: str) -> int:
     for h in text:
         if h == "." or h == "?" or h == "!":
             teller += 1
-            print(teller)
+
     return teller
 
 # opdracht 3
 def getNumberOfWords(text: str) -> int:
     woorden =  text.split()
+    print (woorden)
     teller = len(woorden)
     return teller       
 
 def totaalpunten(text:str) -> int:
-    
+
     
     woorden = getNumberOfWords(text)
     zinnen = getNumberOfSentences(text)
-
+    print (zinnen)
     gemidelde = woorden/zinnen
 
     if gemidelde <=7:

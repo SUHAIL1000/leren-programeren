@@ -9,7 +9,7 @@ def calculate():
     characterLabel.config(text=f"karakter: {getNumberOfCharacters(textToBeCalculated)}")
     sentencesLabel.config(text =f"Zinnen: {getNumberOfSentences(textToBeCalculated)}")
     wordlabel.config (text = f"woorden:{getNumberOfWords(textToBeCalculated)}")
-    bereken_totaallabel.config(text = f"woorden:{totaalpunten(textToBeCalculated)}")
+    bereken_totaallabel.config(text = f"totaal:{totaalpunten(textToBeCalculated)}")
 
 #variables TK
 root = tk.Tk()              # create tkInter window

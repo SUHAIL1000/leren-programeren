@@ -12,8 +12,8 @@ keuze = (input("wat wilt u doen? A) getallen optellen, B) getallen aftrekken, C)
 n1 = int(input("geef getal op "))
 
 while True:
-    
-    
+
+
     if keuze == "a":
 
         n2 = int(input("geef getal 2e op "))
@@ -48,7 +48,7 @@ while True:
     elif keuze == "h":
             n2 = 2
             antwoord = division(n1,n2)
-        
+
     elif keuze == "i":
         break
     n1= antwoord
