@@ -1,4 +1,4 @@
-def namen_en_leeftijden() -> dict:
+def namen_en_leeftijden():
     namen_leeftijd_dict = {}
     naamvraag = input("Wat is je naam? voer 'klaar'in als je klaar bent: ")
     if naamvraag == "klaar":
@@ -23,3 +23,4 @@ for y in namen_leeftijd_lijst:
     name = y["naam"]
     age = y["leeftijd"]
     print(f"{name} is {age} jaar")
+

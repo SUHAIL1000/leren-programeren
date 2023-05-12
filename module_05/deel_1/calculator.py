@@ -28,7 +28,7 @@ while True:
 
         n2 = int(input("geef getal 2e op "))
         antwoord = multiplicaton(n1,n2)
-
+        
     elif keuze == "d":
 
         n2 = int(input("geef getal 2e op "))

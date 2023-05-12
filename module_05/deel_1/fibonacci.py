@@ -1,15 +1,15 @@
-vraag = int(input("geef getal"))
+vraag = int(input("geef getal "))
 
-def fibonacci(fib:int)->list:
+def fibonacci(fibo):
     teler = 0
     teler_02 = 1
 
 
     for x in range (vraag -2):
-        getal_1 = fib[teler]
-        getal_02 = fib[teler_02]
+        getal_1 = fibo[teler]
+        getal_02 = fibo[teler_02]
         antwoord = getal_1 + getal_02
-        fib.append(antwoord)
+        fibo.append(antwoord)
         teler += 1
         teler_02 += 1
 
